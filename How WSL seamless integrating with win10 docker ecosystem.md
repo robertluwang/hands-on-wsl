@@ -35,7 +35,9 @@ oldhorse@dreamcloud:~$ ll .local/bin/|grep docker
 when run docker-compose, cannot find due to local installation not in PATH, can add it to local profile ~/.bashrc
 ```
 PATH=$HOME/.local/bin:$PATH
-
+```
+verify installation by
+```
 oldhorse@dreamcloud:~$ docker-compose --version
 docker-compose version 1.23.2, build 1110ad0
 ```
