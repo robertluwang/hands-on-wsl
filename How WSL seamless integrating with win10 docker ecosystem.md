@@ -215,7 +215,7 @@ docker    2795  2772  0 19:09 pts/0    00:00:00 grep docker
 ```
 
 ## run win docker machine in WSL 
-window docker machine is running smoothly in WSL, the default docker home is C:\Users\win10user\.docker, 
+window docker machine is running smoothly in WSL, the default docker home is C:\Users\win10user\\.docker, 
 ```
 oldhorse@dreamcloud:~$ dm create new
 Creating CA: C:\Users\win10user\.docker\machine\certs\ca.pem
