@@ -45,7 +45,7 @@ export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 ### sync folder location 
 normally project Vagrantfile is located at home folder which is inside WSL file system, 
 
-C:\Users\xxx\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\
+C:\Users\win10user\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\
 
 will get this error,
 ```
@@ -56,7 +56,7 @@ DrvFs type. Host path: .
 
 The WSL /, /root, /home are VolFs, /mnt/c is DrvFs, shared folder has to be located in DrvFs like /mnt/c.
 
-so I moved vagrant project folder to /mnt/c/vagrant, for example /mnt/c/vagrant/centos7test, this will be sync folder when launch vagrant guest.
+so I moved vagrant project folder to /mnt/c/vagrant, for example /mnt/c/vagrant/centos7dev, this will be sync folder when launch vagrant guest.
 
 ## new vagrant home in WSL
 The vagrant home by default is user home folder, the downloaded vagrant box will be in this location, 
