@@ -138,7 +138,7 @@ default via 10.0.2.2 dev enp0s3 proto static metric 100
 
 so far the vagrant in WSL is working perfect as expected.
 
-## run both win vagrant and wsl vagrant
+## run dual win vagrant and wsl vagrant
 If I want to run vagrant window version at same time on win10, they can share vagrant home with wsl vagrant, it is useful to share same vagrant box for both vagrant.
 
 as above, the vagrant home in WSL:
