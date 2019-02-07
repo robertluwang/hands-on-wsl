@@ -74,7 +74,7 @@ drwxrwxrwx 0 root root      512 Feb  6 19:23 ../
 The all toolbox written by Go, so they are highly portable, can run on win10 or inside WSL.
 
 ## docker server on win10
-There is not dockerd on win10, will use docker-machine.exe to launch/stop docker machine node, the behind it is fact the tiny vm running in virtualbox.
+There is not docker daemon running on win10, will use docker-machine.exe to launch/stop docker machine node, the behind it is fact the tiny vm running in virtualbox.
 
 I used short name for these most frequently operations:
 ```
