@@ -1,12 +1,11 @@
-
-# vagrant for WSL
+# Dual vagrant system for WSL on win10
 vagrant: 2.2.3
 WSL: win10 wsl Ubuntu-18.04
 
 vagrant for WSL, basic idea is you need to install vagrant inside WSL, since the window vagrant.exe not working well in WSL, main conflict seems from WSL unix path and window path format.
 https://www.vagrantup.com/docs/other/wsl.html
 
-This post is about all details when you deal with vagrant for WSL.
+This post is about all details when you deal with vagrant for WSL, and how to run dual vagrant(WSL and window) to share vagrant box.
 
 ## vagrant package installation
 Let's download latest deb 64bits from https://www.vagrantup.com/downloads.html, and install it in WSL, 
