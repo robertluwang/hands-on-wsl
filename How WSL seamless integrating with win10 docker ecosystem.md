@@ -78,11 +78,11 @@ There is not docker daemon running on win10, will use docker-machine.exe to laun
 
 I used short name for these most frequently operations:
 ```
-win msys 
+wsl
 alias dc='/mnt/c/portableapps/dockertoolbox/docker-compose.exe'
 alias dm='/mnt/c/portableapps/dockertoolbox/docker-machine.exe'
 
-wsl 
+win msys 
 alias dc='/c/portableapps/dockertoolbox/docker-compose.exe'
 alias dm='/c/portableapps/dockertoolbox/docker-machine.exe'
 ```
