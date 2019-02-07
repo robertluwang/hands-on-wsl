@@ -18,9 +18,10 @@ PasswordAuthentication yes
 PermitRootLogin no
 ```
 then start it as root, 
+```
 oldhorse@dreamcloud:~$ sudo service ssh start
  * Starting OpenBSD Secure Shell server sshd                                   
-
+```
 I tested ssh client in putty and SecureCRT, both are working very well.
 
 ## window env in ssh 
