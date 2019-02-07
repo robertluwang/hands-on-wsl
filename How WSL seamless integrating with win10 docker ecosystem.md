@@ -41,7 +41,7 @@ verify installation by
 oldhorse@dreamcloud:~$ docker-compose --version
 docker-compose version 1.23.2, build 1110ad0
 ```
-We can run docker-compose as python package locally or as window binary.
+The docker-compose can be ran as python package locally or as window binary.
 
 ## run dockerd in wsl 
 We cannot run dockerd in WSL since it is not real Linux, there is not Linux kernel there, let's have a try.
