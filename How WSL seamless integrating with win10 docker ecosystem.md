@@ -255,7 +255,7 @@ You can further specify your shell with either 'cmd' or 'powershell' with the --
 
 SET DOCKER_TLS_VERIFY=1
 SET DOCKER_HOST=tcp://192.168.99.101:2376
-SET DOCKER_CERT_PATH=C:\Users\erobwan\.docker\machine\machines\new
+SET DOCKER_CERT_PATH=C:\Users\win10user\.docker\machine\machines\new
 SET DOCKER_MACHINE_NAME=new
 SET COMPOSE_CONVERT_WINDOWS_PATHS=true
 REM Run this command to configure your shell:
