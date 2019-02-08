@@ -1,2 +1,2 @@
 # wslnote
-notes for WSL, win10 Linux subsystem, hands-on devops guide.
+A hands-on  WSL devops guide 
