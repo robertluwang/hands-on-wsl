@@ -1,4 +1,4 @@
-#multi python on wsl
+# multi python on wsl
 
 You can install multi version of Python on WSL, but normally latest one will override previous one when you type python/ipython/pip/easy_install cli tool.
 
