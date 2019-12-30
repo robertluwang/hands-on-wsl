@@ -20,6 +20,7 @@ In my case, I installed python2 and python3 using apt on WSL, also installed ana
 /usr/bin/python3  // python 3.6 
 ```
 we can double verify the library path as below:
+
 anaconda3 python 3.7 
 ```
 (base) oldhorse $ /home/oldhorse/anaconda3/bin/python3 -c "import sys;print(sys.path)"
@@ -102,6 +103,7 @@ Jupyter notebook very handy web based env for python is for live code, equations
 The jupyter-kernel is key concept Jupyter notebook, a notebook kernel is an operating system process (in userland) that communicates through several ZeroMQ connections. It receives code snippets to execute, runs these code snippets, and returns the result and output of the execution.
 
 install kernel using correct python,
+
 wsl python2
 ```
 (base) oldhorse $ /usr/bin/python2 -m ipykernel install --user
