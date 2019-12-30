@@ -36,6 +36,12 @@ wsl python 2.7
 (base) oldhorse $ /usr/bin/python -c "import sys;print(sys.path)"
 ['', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-x86_64-linux-gnu', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/home/oldhorse/.local/lib/python2.7/site-packages', '/usr/local/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages', '/usr/lib/pymodules/python2.7']
 ```
+Here is python list 
+```
+/home/oldhorse/anaconda3/bin/python3  // anaconda3 python3
+/usr/bin/python3 // wsl python3
+/usr/bin/python2 // wsl python2
+```
 ## ipython
 ipython is interactive python shell with lots of magic command, it is fact the module IPython, the ipython cli is wrapper script, depending on correct python binary.
 
@@ -55,6 +61,12 @@ can verify library path for each ipython,
 ['/usr/bin', '/usr/lib/python36.zip', '/usr/lib/python3.6', '/usr/lib/python3.6/lib-dynload', '', '/home/oldhorse/.local/lib/python3.6/site-packages', '/usr/local/lib/python3.6/dist-packages', '/usr/lib/python3/dist-packages', '/home/oldhorse/.local/lib/python3.6/site-packages/IPython/extensions', '/home/oldhorse/.ipython']
 (base) oldhorse $ /usr/bin/ipython2 -c "import sys;print(sys.path)"
 ['', '/usr/bin', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-x86_64-linux-gnu', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/home/oldhorse/.local/lib/python2.7/site-packages', '/usr/local/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages', '/usr/lib/pymodules/python2.7', '/home/oldhorse/.local/lib/python2.7/site-packages/IPython/extensions', '/home/oldhorse/.ipython']
+```
+Here is ipython list
+```
+/home/oldhorse/anaconda3/bin/ipython3  // anaconda3 ipython3
+/usr/bin/ipython3 // wsl ipython3
+/usr/bin/ipython2 // wsl ipython2
 ```
 ## pip 
 pip is python package management tool, it is fact the module pip for Wheel format, the pip cli is wrapper script, depending on correct python binary.
@@ -82,7 +94,12 @@ pip 19.3.1 from /home/oldhorse/.local/lib/python3.6/site-packages/pip (python 3.
 (base) oldhorse $ /usr/bin/python2 -m pip --version
 pip 19.3.1 from /home/oldhorse/.local/lib/python2.7/site-packages/pip (python 2.7)
 ```
-
+Here is pip list 
+```
+/home/oldhorse/anaconda3/bin/pip  // anaconda3 pip
+/usr/bin/pip3 // wsl pip3
+/usr/bin/pip2 // wsl pip2
+```
 ## easy_install 
 
 easy_install is handy installation tool, it is from module setuptools for Eggs format, check if module setuptools installed for each pip and easy_install wrapper script existing. If setuptools there but easy_install not, just manually create one, below easy_install3 somehow not there so just copy from easy_install, modify the correct python path in #! Shebang line.
@@ -96,7 +113,12 @@ setuptools 41.0.1 from /home/oldhorse/.local/lib/python3.6/site-packages (Python
 (base) oldhorse $ /usr/local/bin/easy_install --version
 setuptools 41.4.0 from /home/oldhorse/.local/lib/python2.7/site-packages (Python 2.7)
 ```
-
+Here is easy_install list 
+```
+/home/oldhorse/anaconda3/bin/easy_install // anaconda3 python3
+/usr/local/bin/easy_install3  // wsl python3
+/usr/local/bin/easy_install  // wsl python2
+```
 ## Jupyter Notebook
 Jupyter notebook is very handy web based env for python live code, equations, visualizations.
 
@@ -162,9 +184,9 @@ so far there are 3 ipykernel setting to 3 python versions,
   python2          /home/oldhorse/.local/share/jupyter/kernels/python2
   python3          /home/oldhorse/.local/share/jupyter/kernels/python3
 ```
-Here is sample launch,
+Here is sample launch from anaconda3, 
 ```
-(base) oldhorse $ python3 -m jupyter notebook
+(base) oldhorse $ /home/oldhorse/anaconda3/bin/python3 -m jupyter notebook
 [I 17:27:15.813 NotebookApp] JupyterLab extension loaded from /home/oldhorse/anaconda3/lib/python3.7/site-packages/jupyterlab
 [I 17:27:15.814 NotebookApp] JupyterLab application directory is /home/oldhorse/anaconda3/share/jupyter/lab
 [I 17:27:17.012 NotebookApp] Serving notebooks from local directory: /home/oldhorse
@@ -174,3 +196,11 @@ Here is sample launch,
 [I 17:27:17.014 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 [C 17:27:22.273 NotebookApp]
 ```
+You can launch from below python as well,
+```
+/usr/bin/python3 -m jupyter notebook
+/usr/bin/python2 -m jupyter notebook
+```
+You should see 3 jupyter kernels from list.
+
+
