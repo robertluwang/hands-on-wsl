@@ -98,7 +98,7 @@ setuptools 41.4.0 from /home/oldhorse/.local/lib/python2.7/site-packages (Python
 ```
 
 ## Jupyter Notebook
-Jupyter notebook is very handy web based env for python for live code, equations, visualizations.
+Jupyter notebook is very handy web based env for python live code, equations, visualizations.
 
 The jupyter-kernel is key concept Jupyter notebook, a notebook kernel is an operating system process (in userland) that communicates through several ZeroMQ connections. It receives code snippets to execute, runs these code snippets, and returns the result and output of the execution. In another word, it is just json config file for connection details.
 
