@@ -122,7 +122,7 @@ Here is easy_install list
 ## Jupyter Notebook
 Jupyter notebook is very handy web based env for python live code, equations, visualizations.
 
-The jupyter-kernel is key concept Jupyter notebook, a notebook kernel is an operating system process (in userland) that communicates through several ZeroMQ connections. It receives code snippets to execute, runs these code snippets, and returns the result and output of the execution. In another word, it is just json config file for connection details.
+The jupyter-kernel is key concept for Jupyter notebook, a notebook kernel is an operating system process (in userland) that communicates through several ZeroMQ connections. It receives code snippets to execute, runs these code snippets, and returns the result and output of the execution. In another word, it is just json config file for connection details.
 
 install kernel using correct python,
 
