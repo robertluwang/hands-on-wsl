@@ -59,6 +59,7 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+set pastetoggle=<F2>
 ```
 
 So far I used putty as favourite terminal for all daily work on win10. 
