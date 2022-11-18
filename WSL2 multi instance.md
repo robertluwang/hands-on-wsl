@@ -105,7 +105,6 @@ Here is way to change hostname in WSL2.
 [network]
 hostname = wsl2
 generateHosts = false
-
 ```
 update hostname /etc/hosts, 
 ```

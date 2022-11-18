@@ -14,7 +14,8 @@ generateHosts = false
 
 after WSL restart
 ```
-PS$ wsl -t Ubuntu-22.04
+PS > wsl -t Ubuntu-22.04
+PS > wsl -d Ubuntu-22.04
 ```
 will see /etc/hostname and prompt updated to wsl2, 
 ```

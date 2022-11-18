@@ -23,7 +23,7 @@ N: See apt-secure(8) manpage for repository creation and user configuration deta
 E: The repository 'http://archive.ubuntu.com/ubuntu hirsute Release' no longer has a Release file.
 ```
 
-when browser url http://91.189.91.38/ubuntu/dists/, cannot find hirsute in list.
+when browser url http://91.189.91.38/ubuntu/dists/, cannot find hirsute in list due to 21.04 is interim release instead of LTS release.
 
 ## LTS and interim 
 check out here what is difference between LTS and interim,

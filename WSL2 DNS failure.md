@@ -1,3 +1,4 @@
+# WSL2 DNS failure
 ## DNS issue 
 
 From WSL2 vm, I cannot ping google.ca or any site, 
@@ -68,7 +69,7 @@ Ethernet adapter vEthernet (WSL):
 ```
 WSL2 vm access to it without issue, 
 ```
-oldhorse@WSL2:~$ ping 172.26.128.1
+oldhorse@wsl2:~$ ping 172.26.128.1
 PING 172.26.128.1 (172.26.128.1) 56(84) bytes of data.
 64 bytes from 172.26.128.1: icmp_seq=1 ttl=128 time=0.288 ms
 ```
