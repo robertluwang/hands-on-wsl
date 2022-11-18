@@ -17,7 +17,7 @@ Based on requests, 2 features needed for WSL2:
 - Windows Subsystem for Linux 
 
 Did but still got error, 
-![](../images/WSL2%20failure.png)
+![](./images/WSL2%20failure.png)
 
 ## verify virtualization for win11 vm
 Above error seems mean the nested VT not really working at all for VB VM.

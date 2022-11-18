@@ -31,7 +31,7 @@ https://ubuntu.com/about/release-cycle
 - LTS : LTS or ‘Long Term Support’ releases are published every two years in April. 
 - interim - Every six months between LTS versions, Canonical publishes an interim release of Ubuntu, supported for 9 months.
 
-![](../images/ubuntu%20release.png)
+![](./images/ubuntu%20release.png)
 
 ## remove old imported WSL 
 In my case, 21.04 is imported WSL instance, cannot uninstall from win10, need to unregister it manually, 
