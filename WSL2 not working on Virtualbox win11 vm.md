@@ -9,7 +9,7 @@ As remedy, enable it from CMD as admin,
 set PATH=%PATH%;"C:\Program Files\Oracle\VirtualBox"
 VBoxManage modifyvm win11 --nested-hw-virt on
 ```
-![](../images/nested%20VT.png)
+![](./images/nested%20VT.png)
 
 ## WSL2 installation failure
 Based on requests, 2 features needed for WSL2:
