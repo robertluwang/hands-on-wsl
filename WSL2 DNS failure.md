@@ -105,7 +105,7 @@ generateResolvConf = false
 2) backup /etc/resolv.conf
 ```
 cp /etc/resolv.conf /etc/resolve.conf.backup
-rm /etc/resolv.conf
+unlink /etc/resolv.conf
 ```
 3) reboot WSL2
 wsl -t Ubuntu-22.04 
