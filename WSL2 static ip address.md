@@ -86,7 +86,7 @@ PING google.ca (172.217.13.163) 56(84) bytes of data.
 ## WSL2 network limitation 
 both are working and access to Internet, however they have same ip 192.168.80.10 for eth0.
 
-The reason is not just WSL adaptor is NAT adaptor, but also in that all WSL instances running in one hyper-v based WSL VM, they share same network namespace, NIC, there seems not way to have own static ip for each WSL instance.
+The reason is not just WSL adaptor is NAT adaptor, but also in fact that all WSL instances running in one hyper-v based WSL VM, they share same network namespace, NIC, there seems not way to have own static ip for each WSL instance.
 
 
 
