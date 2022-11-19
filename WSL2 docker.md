@@ -8,7 +8,8 @@ systemctl list-units --type=service
 ```
 ## install docker 
 Just follow up ubuntu docker installation guide [here](https://docs.docker.com/engine/install/ubuntu). 
-I made this handy script to install docker on ubuntu in one shot - [docker-install.sh](https://github.com/robertluwang/miniguide-nativecloud/blob/main/k8s%20script/docker-install.sh)
+I made this handy script to install docker on ubuntu in one shot.
+[docker-install.sh](https://github.com/robertluwang/miniguide-nativecloud/blob/main/k8s%20script/docker-install.sh)
 ## verify docker
 Restart wsl instance, then check,
 ```
@@ -44,5 +45,21 @@ TriggeredBy: × docker.socket
       Tasks: 14
      Memory: 157.3M
      CGroup: /system.slice/docker.service
+```
+Found this [ref post](https://crapts.org/2022/05/15/install-docker-in-wsl2-with-ubuntu-22-04-lts/#:~:text=You%20need%20to%20switch%20to,Docker%20will%20start%20as%20expected!) , 22.04 by default uses iptables-nft instead of iptables-legacy, as remedy switch to iptables-legacy.
+```
+oldhorse@wsl2:~$ sudo update-alternatives --config iptables
+[sudo] password for oldhorse: 
+There are 2 choices for the alternative iptables (providing /usr/sbin/iptables).
+
+  Selection    Path                       Priority   Status
+------------------------------------------------------------
+* 0            /usr/sbin/iptables-nft      20        auto mode
+  1            /usr/sbin/iptables-legacy   10        manual mode
+  2            /usr/sbin/iptables-nft      20        manual mode
+```
+after changed to 1, then restart docker smoothly, 
+```
+systemctl restart docker
 ```
 
