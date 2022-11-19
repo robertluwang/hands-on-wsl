@@ -23,7 +23,7 @@ Ethernet adapter vEthernet (WSL):
 Would like to change WSL ip to 192.168.80.1, and wsl instance1 to 192.168.80.2, wsl instance2 to 192.168.80.3.
 
 ## wsl2ip script 
-I made this handy [batch job](https://github.com/robertluwang/wslnote/blob/master/src/wsl2ip.bat), run CMD as admin, then run it.
+I made this handy [batch job](https://github.com/robertluwang/wslnote/blob/master/src/wsl2ip.bat), please make sure wsl instance is running, run batch job in CMD as admin.
 ```
 date /t
 time /t
@@ -38,7 +38,7 @@ powershell -c "Get-NetAdapter 'vEthernet (WSL)' | Get-NetIPAddress | Remove-NetI
 date /t
 time /t
 ```
-this will update WSL NAT adaptor on host pc and NAT NIC eth0 static ip, also please to make sure wsl instance is running, o/w cannot change NIC ip.
+this will update WSL NAT adaptor on host pc and NAT NIC eth0 static ip, 
 ```
 C:\tools\wsl>wsl2ip.bat
 ```
