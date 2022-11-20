@@ -93,67 +93,7 @@ Ethernet adapter vEthernet (WSL):
    Subnet Mask . . . . . . . . . . . : 255.255.240.0
    Default Gateway . . . . . . . . . :
 ```
-## reset WSL adaptor only 
-You also can reset WSL gateway only if you keep original setting info, 
-```
-C:\Users\erobwan>powershell -c "Get-NetAdapter 'vEthernet (WSL)' | Get-NetIPAddress | Remove-NetIPAddress -Confirm:$False; New-NetIPAddress -IPAddress 172.26.128.1 -PrefixLength 20 -InterfaceAlias 'vEthernet (WSL)'; Get-NetNat | ? Name -Eq WSLNat | Remove-NetNat -Confirm:$False; New-NetNat -Name WSLNat -InternalIPInterfaceAddressPrefix 172.26.128.0/20;"
 
-IPAddress         : 172.26.128.1
-InterfaceIndex    : 77
-InterfaceAlias    : vEthernet (WSL)
-AddressFamily     : IPv4
-Type              : Unicast
-PrefixLength      : 20
-PrefixOrigin      : Manual
-SuffixOrigin      : Manual
-AddressState      : Tentative
-ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
-PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
-SkipAsSource      : False
-PolicyStore       : ActiveStore
-
-IPAddress         : 172.26.128.1
-InterfaceIndex    : 77
-InterfaceAlias    : vEthernet (WSL)
-AddressFamily     : IPv4
-Type              : Unicast
-PrefixLength      : 20
-PrefixOrigin      : Manual
-SuffixOrigin      : Manual
-AddressState      : Invalid
-ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
-PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
-SkipAsSource      : False
-PolicyStore       : PersistentStore
-
-Caption                          :
-Description                      :
-ElementName                      :
-InstanceID                       : WSLNat;0
-Active                           : True
-ExternalIPInterfaceAddressPrefix :
-IcmpQueryTimeout                 : 30
-InternalIPInterfaceAddressPrefix : 172.26.128.0/20
-InternalRoutingDomainId          : {00000000-0000-0000-0000-000000000000}
-Name                             : WSLNat
-Store                            : Local
-TcpEstablishedConnectionTimeout  : 1800
-TcpFilteringBehavior             : AddressDependentFiltering
-TcpTransientConnectionTimeout    : 120
-UdpFilteringBehavior             : AddressDependentFiltering
-UdpIdleSessionTimeout            : 120
-UdpInboundRefresh                : False
-PSComputerName                   :
-```
-let's check WSL ip, 
-```
-Ethernet adapter vEthernet (WSL):
-
-   Connection-specific DNS Suffix  . :
-   IPv4 Address. . . . . . . . . . . : 172.26.128.1
-   Subnet Mask . . . . . . . . . . . : 255.255.240.0
-   Default Gateway . . . . . . . . . :
-```
 
 
 
