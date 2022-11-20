@@ -10,7 +10,7 @@ the reason is clear that source line still in bash.bashrc,
 cat /etc/bash.bashrc|grep source
 source /usr/sbin/start-systemd-namespace
 ```
-so how to comment out when WSL accessible?
+so how to comment out when WSL inaccessible?
 ## option1 - force login WSL without profile and rc file
 Lucky you can always to access WSL instance via wsl from host pc, 
 ```
