@@ -1,2 +1,2 @@
-# wslnote
-A hands-on  WSL devops guide 
+# wsl hands-on guide
+A hands-on WSL devops guide 
