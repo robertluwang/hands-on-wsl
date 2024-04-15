@@ -8,8 +8,7 @@ systemctl list-units --type=service
 ```
 ## install docker 
 Just follow up ubuntu docker installation guide [here](https://docs.docker.com/engine/install/ubuntu). 
-I made this handy script to install docker on ubuntu in one shot.
-[docker-server.sh](https://github.com/robertluwang/hands-on-nativecloud/blob/main/src/k8s-cri-dockerd/docker-server.sh)
+I made this handy script to install docker on ubuntu in one shot, [docker-server.sh](https://github.com/robertluwang/hands-on-nativecloud/blob/main/src/k8s-cri-dockerd/docker-server.sh) .
 ## verify docker
 Restart wsl instance, then check,
 ```
