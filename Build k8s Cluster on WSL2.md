@@ -576,10 +576,10 @@ Hey! I am Robert Wang, work@Ericsson, live in Montreal, QC, CA.
 
 More simple and more efficient.
 
-[GitHub: robertluwang](https://github.com/robertluwang)
-[Twitter: robertluwang](https://twitter.com/robertluwang)
-[LinkedIn: robertluwang](https://www.linkedin.com/in/robertluwang/) 
-[Medium: robertluwang](https://medium.com/@robertluwang)
-[Dev.to: robertluwang](https://dev.to/robertluwang)
-[Web: dreamcloud.artark.ca](https://dreamcloud.artark.ca)
+- [GitHub: robertluwang](https://github.com/robertluwang)
+- [Twitter: robertluwang](https://twitter.com/robertluwang)
+- [LinkedIn: robertluwang](https://www.linkedin.com/in/robertluwang/) 
+- [Medium: robertluwang](https://medium.com/@robertluwang)
+- [Dev.to: robertluwang](https://dev.to/robertluwang)
+- [Web: dreamcloud.artark.ca](https://dreamcloud.artark.ca)
 
